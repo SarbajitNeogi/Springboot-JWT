@@ -1,0 +1,38 @@
+services:
+  database:
+    image: 'postgres:15-alpine'
+    restart: 'always'
+    container_name: 'database'
+    networks:
+      - 'red-spring'
+    volumes:
+      - 'data:/var/lib/'
+    env_file:
+      - 'db.env'
+    ports:
+      - '5432'
+
+
+  app:
+    build:
+      context: ./
+      dockerfile: 'Dockerfile'
+    depends_on:
+      - 'database'
+    restart: 'always'
+    container_name: 'app'
+    networks:
+      - 'red-spring'
+    ports:
+      - '8000:8080'
+    env_file:
+      - 'file.env'
+
+
+
+
+
+volumes:
+  'data':
+networks:
+  'red-spring':
