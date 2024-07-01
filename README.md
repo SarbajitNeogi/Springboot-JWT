@@ -26,7 +26,7 @@ Make sure you have the following components installed in your development enviro
 
 
 ```
-[git clone https://github.com/Angel-Raa/spring-security-jwt-authentication-and-authorization.git](https://github.com/SarbajitNeogi/Springboot-JWT.git)
+https://github.com/SarbajitNeogi/Springboot-JWT.git
 ```
 #### Navigate to the project directory
 
