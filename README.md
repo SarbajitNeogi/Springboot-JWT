@@ -1,60 +1,65 @@
-# spring security jwt authentication and authorization
+# Spring Security JWT Authentication and Authorization
 
-Si encuentras útil este repositorio, ¡por favor ayúdanos marcándolo con una ⭐! 😊
+If you find this repository useful, please help us by starring it! 😊
 
-## Tecnologías Utilizadas
+## Technologies Used
 
 - JDK 17
 - Spring Boot 3
-- Spring Data Jpa
-- Spring security 6
+- Spring Data JPA
+- Spring Security 6
 - PostgreSQL 15
 - Java JWT
 - Docker
 
-## Prerrequisitos
+## Prerequisites
 
-Asegúrate de tener instalados los siguientes componentes en tu entorno de desarrollo antes de comenzar:
+Make sure you have the following components installed in your development environment before you start:
 
 1. [Git](https://git-scm.com/downloads)
 2. [Docker](https://docs.docker.com/compose/install/)
 
-## Configuración del Entorno 
+## Environment Setup
 
-#### Clonar el repositorio en tu máquina local
+#### Clone the repository to your local machine
+
+
 
 ```
 git clone https://github.com/Angel-Raa/spring-security-jwt-authentication-and-authorization.git
 ```
-#### Navegar al directorio del proyecto
-Dirígete al directorio del proyecto recién clonado utilizando el siguiente comando:
+#### Navigate to the project directory
+
+Go to the newly cloned project directory using the following command:
 ```
 cd spring-security-jwt-authentication-and-authorization
 ```
-#### Crear y Configurar file.env y db.env
 
-Debes crear dos archivos de configuración, `file.env` y `db.env`, en el directorio raíz del repositorio clonado. 
+#### Create and Configure `file.env` and `db.env`
 
-**file.env** 
-Este archivo contiene las variables de entorno para la aplicación.
+You need to create two configuration files, `file.env` and `db.env`, in the root directory of the cloned repository.
+
+**file.env**
+This file contains the environment variables for the application.
 ```bash
-SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/tu_basedatos
-SPRING_DATASOURCE_USERNAME=tu_usuario
-SPRING_DATASOURCE_PASSWORD=tu_contraseña
+SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/your_database
+SPRING_DATASOURCE_USERNAME=your_username
+SPRING_DATASOURCE_PASSWORD=your_password
 SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
 SPRING_JPA_HIBERNATE_DDL_AUTO=update
 SPRING_JPA_SHOW=true
+
 ```
 **db.env** 
-Este archivo contiene las credenciales para la base de datos.
+This file contains the credentials for the database.
 ```bash
-POSTGRES_DB=nombre_de_tu_basedatos
-POSTGRES_PASSWORD=contraseña_de_la_base_de_datos
-POSTGRES_USER=usuario_de_la_base_de_datos
+POSTGRES_DB=your_database_name
+POSTGRES_PASSWORD=your_database_password
+POSTGRES_USER=your_database_user
 ```
-Asegúrate de reemplazar `nombre_de_tu_basedatos`, `contraseña_de_la_base_de_datos` y `usuario_de_la_base_de_datos` con los valores adecuados para tu configuración.
+Make sure to replace your_database, your_username, your_password, your_database_name, your_database_password, and your_database_user with the appropriate values for your setup.
 
-#### Construir y ejecutar los contenedores de Docker Compose
+#### Build and run the Docker Compose containers
 ```
 docker compose up -d
 ```
@@ -66,9 +71,9 @@ http://localhost:8000/api/v1/swagger-ui/index.html#/
 ![](https://github.com/Angel-Raa/spring-security-jwt-authentication-and-authorization/blob/main/src/main/resources/img/docs.png)
 
 
-## Recursos Adicionales
+## Additional Resources
 
-Aquí hay algunos recursos adicionales que podrían ser útiles:
+Here are some additional resources that might be useful:
 - [Documentacion de Spring Data](https://spring.io/projects/spring-data)
 - [Documentación de Java JWT](https://github.com/jwtk/jjwt)
 - [Documentacion de open jdk 17](https://docs.oracle.com/en/java/javase/17/docs/api/)
