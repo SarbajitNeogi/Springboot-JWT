@@ -74,14 +74,14 @@ http://localhost:8000/api/v1/swagger-ui/index.html#/
 ## Additional Resources
 
 Here are some additional resources that might be useful:
-- [Documentacion de Spring Data](https://spring.io/projects/spring-data)
-- [Documentación de Java JWT](https://github.com/jwtk/jjwt)
-- [Documentacion de open jdk 17](https://docs.oracle.com/en/java/javase/17/docs/api/)
-- [Documentacion de Spring boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
-- [Documentacion de Maven](https://maven.apache.org/guides/getting-started/)
-- [Documentacion de Docker](https://docs.docker.com/)
-- [Documentacion de Spring Security](https://docs.spring.io/spring-security/reference/index.html)
-- [Documentacion de Git](https://git-scm.com/doc)
+- [Documentation Spring Data](https://spring.io/projects/spring-data)
+- [Documentation Java JWT](https://github.com/jwtk/jjwt)
+- [Documentation open jdk 17](https://docs.oracle.com/en/java/javase/17/docs/api/)
+- [Documentation Spring boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
+- [Documentation  Maven](https://maven.apache.org/guides/getting-started/)
+- [Documentation  Docker](https://docs.docker.com/)
+- [Documentation Spring Security](https://docs.spring.io/spring-security/reference/index.html)
+- [Documentation  Git](https://git-scm.com/doc)
 
 
 
